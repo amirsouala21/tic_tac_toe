@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe game | JS tuto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="select-box show">
+        <header>Tic Tac Toe</header>
+        <div class="title">
+            select how do you want to play
+        </div>
+        <div class="options">
+            <button class="solo">Solo</button>
+            <button class="multiplayer">Multiplayer</button>
+        </div>
+    </div>
+    <!-- play bord -->
+    <div class="play-board hide">
+        <div class="details">
+            <div class="players">
+                <span class="xturn">X's Turn</span>
+                <span class="oturn">O's Turn</span>
+            </div>
+        </div>
+
+        <div class="play-area">
+            <section>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </section>
+            <section>
+                <div class="box4"></div>
+                <div class="box5"></div>
+                <div class="box6"></div>
+            </section>
+            <section>
+                <div class="box7"></div>
+                <div class="box8"></div>
+                <div class="box9"></div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- result box -->
+    <div class="result-box hide">
+        <div class="won-text">
+            player <p>(X)</p> has won the game
+        </div>
+        <div class="btn">
+            <button>Replay</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

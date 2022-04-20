@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #56baed;
+}
+
+.hide{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50% , -50%) scale(0.9);
+}
+
+.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50% , -50%) scale(1);
+}
+
+.select-box , .play-board , .result-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    transition: all 0.5s;
+}
+
+.select-box{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: azure;
+    max-width: 370px;
+    width: 100%;
+}
+
+.select-box header{
+    font-size: 35px;
+    font-weight: 600;
+    border-bottom: 0.1px solid #888888;
+    padding: 7px;
+    margin: 3px 0;
+}
+
+.select-box .title{
+    font-size:20px ;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.options button:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+.options button{
+    width: 100%;
+    padding: 6px 10px;
+    margin: 0 2px;
+    transition: all 0.3s;
+    color: white;
+    background-color: #56baed;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: larger;
+}
+/* play board */
+
+
+
+.play-board .details{
+    background-color: white;
+    color: #56baed;
+    padding: 7px;
+    border-radius: 5px; 
+}
+
+.details .players{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.details .players span{
+    background-color: white;
+    padding: 5px 9px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 8px;
+    font-size: larger;
+    font-weight: 460;
+   
+    transition: all 0.7s;
+}
+
+.details .players .active{
+    background-color:#56baed;
+    color:white;
+}
+
+.play-area{
+    margin-top: 17px;
+}
+
+.play-board section{
+    display: flex;
+    cursor: pointer;
+}
+
+.play-board section div:hover{
+    transform: scale(0.98);
+}
+
+.play-board section div{
+    display: block;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 52px;
+    text-align: center;
+    line-height: 80px;
+    color:#56baed ;
+    transition: all 0.7;
+}
+
+/* result board*/
+
+.result-box{
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+    max-width: 385px;
+    width: 100%;
+}
+
+.result-box .won-text{
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.result-box .won-text p{
+    font-weight: 600;
+    margin:0 3px;
+
+}
+
+.result-box .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result-box button{
+    width: 38%;
+    padding:10px;
+    margin: 0 2px;
+    transition: all 0.3s;
+    color: white;
+    background-color: #56baed;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+.result-box button:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
